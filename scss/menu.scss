@@ -1,0 +1,105 @@
+@import "_vars.scss";
+
+.menu {
+
+  &__items {
+    list-style: none;
+  	display: flex;
+  	flex-flow: row nowrap;
+  	padding: 0;
+  }
+
+  &__item {
+    margin-left: 50px;
+  	position: relative;
+
+    @media screen and (max-width: 1500px) {
+      margin-left: 30px;
+
+    }
+  }
+
+  &__item:first-child {
+    @media screen and (min-width: 1000px) {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    color: $color_white;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $color_red;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__phone {
+    display: none;
+  }
+
+
+  @media screen and (max-width: 1000px) {
+
+    &__burger {
+      display: block;
+    }
+
+  	&__burger--show {
+  		right: 0;
+      top: 40px;
+      right: 5%;
+  		width: 50px;
+  		height: 50px;
+  		display: block;
+  		z-index: 2;
+  		position: absolute;
+  		text-align: center;
+  		line-height: 50px;
+
+      @media screen and (max-width: 420px) {
+        top: 10px;
+        right: 0;
+      }
+  	}
+
+    &__burger--show:before {
+      content: url(../svg/menu-closed.svg);
+    }
+
+    &__burger--hide:before {
+      content: url(../svg/menu-open.svg);
+    }
+
+  	&__items--mobile{
+  		display: flex;
+  		flex-flow: column nowrap;
+  		background-color: white;
+  		width: 100%;
+  		position: absolute;
+  		left: -999px;
+  		padding: 30px 0;
+  		margin: 0;
+  	}
+
+  	&__items--mobile-show {
+  		left: 0;
+      top: 0;
+   	  transition: left 0.1s ease-out 0.1s;
+  	}
+
+  	&__item {
+  		margin: 30px 0 0 20px;
+  	}
+
+    &__link {
+      color: $color_black;
+    }
+
+
+  }
+}

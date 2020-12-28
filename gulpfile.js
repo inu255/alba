@@ -3,6 +3,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 
 
@@ -18,6 +19,7 @@ function convertSass(done) {
       // browsers: ['last 2 versions'],
       cascade: false
     }))
+    .pipe(concat('style.css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css/'))
@@ -25,6 +27,14 @@ function convertSass(done) {
 
   done();
 }
+
+// function concatJs(done) {
+//   gulp.src('./js/*')
+//     .pipe(concat('script.js'))
+//     .pipe(gulp.dest('./js/'))
+//     .pipe(browserSync.stream())
+//   done()
+// }
 
 function sync(done) {
   browserSync.init({
@@ -44,7 +54,7 @@ function browserReload(done) {
 function watchAll() {
   gulp.watch("./scss/*", convertSass);
   gulp.watch("./index.html", browserReload);
-  gulp.watch("./index.js", browserReload);
+  gulp.watch("./js/*", browserReload);
 
 }
 

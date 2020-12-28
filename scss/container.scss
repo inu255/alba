@@ -1,0 +1,17 @@
+.container {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  &__section {
+    padding-left: 10%;
+    padding-right: 10%;
+    @media screen and (max-width: 1000px) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    @media screen and (max-width: 420px) {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  }
+}

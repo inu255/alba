@@ -1,0 +1,40 @@
+@import "_vars.scss";
+
+.advantages {
+
+	&__heading {
+    font-size: 64px;
+    margin-top: 2.2em;
+    width: 72%;
+	}
+
+  &__card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+	&__card {
+    width: 30%;
+	}
+
+}
+
+.card {
+
+	&__image {
+
+	}
+
+	&__heading {
+
+	}
+
+	&__line {
+
+	}
+
+	&__text {
+
+	}
+
+}

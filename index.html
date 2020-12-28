@@ -7,9 +7,69 @@
   <title>Document</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Prata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&family=Prata&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
 
+  <div class="container">
+    <section class="container__section first">
+      <header class="first__header">
+        <a class="first__logo" href="#"><img src="./svg/logo.svg" alt="logo"></a>
+
+        <nav class="first__menu menu">
+          <div class="menu__burger menu__burger--show"></div>
+          <ul class="menu__items menu__items--mobile">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Works</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Join</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="first__language">
+          <div class="first__current-language">En</div>
+          <div class="first__available-language first__available-language--hidden">Ru</div>
+        </div>
+        <a class="first__phone" href="tel:8 (343) 382 38 21">8 (343) 382 38 21</a>
+      </header>
+
+      <h1 class="first__heading heading">Mercedes-Benz<br> 190 (W201)</h1>
+      <div class="first__subheading">
+        The model under the title 190, in the W201 body, is a
+        mid-range sedan from the German automobile
+        manufacturer Mercedes-Benz. The car was produced
+        starting in 1982, and it was removed from the
+        Assembly line in 1993.
+      </div>
+
+      <a class="first__arrow" href="#"><img src="./svg/scroll.svg" alt="scroll"></a>
+    </section>
+
+    <section class="container__section advantages">
+      <h2 class="advantages__heading heading">Advantages<br> of contacting our company</h2>
+
+      <div class="advantages__card-container">
+        <div class="advantages__card card">
+          <img class="card__image" src="./svg/professionalism.svg" alt="professionalism">
+          <h3 class="card__heading">Professionalism</h3>
+          <div class="card__line"></div>
+          <div class="card__text">
+            The projection, according to the
+            modified Euler equation, distorts the
+            aperiodic altimeter. The center of forces
+            elliptically forces a different view of
+            what a dynamic total rotation is.
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <script src="./js/first.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>

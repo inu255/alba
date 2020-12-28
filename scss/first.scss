@@ -1,0 +1,139 @@
+@import "_vars.scss";
+
+.first {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  color: $color_white;
+  overflow-y: auto;
+  position: relative;
+
+	&__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+    @media screen and (max-width: 420px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+	}
+
+	&__logo {
+
+	}
+
+	&__menu {
+    margin-left: 27.5%;
+    @media screen and (max-width: 1400px) {
+      margin-left: auto;
+    }
+	}
+
+	&__language {
+    margin-left: auto;
+    margin-right: 60px;
+    position: relative;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+	}
+
+  &__current-language {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &:after {
+      content: url('../svg/language-dropdown.svg');
+      position: absolute;
+      left: 27px;
+      top: -2px;
+    }
+  }
+
+  &__available-language {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 1.3em;
+
+    &--hidden {
+      display: none;
+
+    }
+  }
+
+	&__phone {
+    font-weight: 500;
+    color: $color_white;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: none;
+    margin-right: 0;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+	}
+
+	&__heading {
+    font-size: 96px;
+    margin-top: 2.2em;
+
+    @media screen and (max-width: 850px) {
+      font-size: 60px;
+    }
+    @media screen and (max-width: 510px) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: 420px) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: 321px) {
+      font-size: 38px;
+    }
+	}
+
+	&__subheading {
+    width: 450px;
+    font-size: 18px;
+    line-height: 150%;
+    border-left: 2px solid $color_red;
+    margin-left: 3em;
+    padding: 1.5em;
+    padding-left: 3em;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 850px) {
+      width: 70%;
+      margin-left: 1.5em;
+      padding-left: 1.5em;
+    }
+    @media screen and (max-width: 420px) {
+      width: 97%;
+      padding-left: 0.5em;
+      padding-right: 0;
+      margin-left: 0;
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 321px) {
+      font-size: 16px;
+    }
+	}
+
+	&__arrow {
+    position: absolute;
+    right: calc(10% + 3em);
+    bottom: 100px;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+	}
+
+}
