@@ -1,14 +1,20 @@
-const gulp = require('gulp');
-const rename = require('gulp-rename');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const sourcemaps = require('gulp-sourcemaps');
-const concat = require('gulp-concat');
-const browserSync = require('browser-sync').create();
+const gulp = require('gulp'),
+      rename = require('gulp-rename'),
+      sass = require('gulp-sass'),
+      autoprefixer = require('gulp-autoprefixer'),
+      sourcemaps = require('gulp-sourcemaps'),
+      concat = require('gulp-concat'),
+      order = require("gulp-order"),
+      browserSync = require('browser-sync').create();
 
 
 function convertSass(done) {
   gulp.src('./scss/*')
+  .pipe(order([
+    'container.scss',
+    'heading.scss',
+    '*.scss'
+  ]))
     .pipe(sourcemaps.init())
     .pipe(sass({
       errorLogConsole: true,
@@ -19,6 +25,7 @@ function convertSass(done) {
       // browsers: ['last 2 versions'],
       cascade: false
     }))
+
     .pipe(concat('style.css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write('./'))

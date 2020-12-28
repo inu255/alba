@@ -1,11 +1,17 @@
+@import "_vars.scss";
+
 .container {
   font-family: 'Inter', 'Arial', sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color_darkgrey;
+
   &__section {
     padding-left: 10%;
     padding-right: 10%;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1030px) {
       padding-left: 5%;
       padding-right: 5%;
     }

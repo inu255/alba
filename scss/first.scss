@@ -15,7 +15,6 @@
     padding-bottom: 40px;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 18px;
     line-height: 21px;
 
     @media screen and (max-width: 420px) {
@@ -85,6 +84,7 @@
 	&__heading {
     font-size: 96px;
     margin-top: 2.2em;
+    color: $color_white;
 
     @media screen and (max-width: 850px) {
       font-size: 60px;
@@ -102,8 +102,6 @@
 
 	&__subheading {
     width: 450px;
-    font-size: 18px;
-    line-height: 150%;
     border-left: 2px solid $color_red;
     margin-left: 3em;
     padding: 1.5em;

@@ -5,36 +5,41 @@
 	&__heading {
     font-size: 64px;
     margin-top: 2.2em;
-    width: 72%;
+    margin-bottom: 1em;
+
+    @media screen and (max-width: 420px) {
+      font-size: 32px;
+    }
 	}
 
   &__card-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 83%;
+    margin: 0 auto 100px auto;
+
+    @media screen and (max-width: 1030px) {
+      width: 100%;
+			margin-bottom: 70px;
+    }
+
+    @media screen and (max-width: 730px) {
+      width: 83%;
+			margin-bottom: 50px;
+    }
   }
 
 	&__card {
-    width: 30%;
-	}
+    width: 27%;
 
-}
+    @media screen and (max-width: 1030px) {
+      width: 31%;
+    }
 
-.card {
-
-	&__image {
-
-	}
-
-	&__heading {
-
-	}
-
-	&__line {
-
-	}
-
-	&__text {
-
+    @media screen and (max-width: 730px) {
+      width: 100%;
+    }
 	}
 
 }

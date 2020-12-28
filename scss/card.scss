@@ -1,0 +1,29 @@
+@import "_vars.scss";
+
+.card {
+
+	&__heading {
+    font-size: 30px;
+    line-height: 160%;
+    white-space: nowrap;
+    @media screen and (max-width: 1000px) {
+      white-space: normal;
+    }
+	}
+
+	&__line {
+    width: 94px;
+    height: 1px;
+    background: $color_red;
+    margin-bottom: 30px;
+
+	}
+
+	&__text {
+
+    @media screen and (max-width: 420px) {
+      margin-bottom: 60px;
+    }
+	}
+
+}
