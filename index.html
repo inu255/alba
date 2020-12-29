@@ -296,9 +296,89 @@
       </div>
     </section>
 
-    <section class="container__section contacts">
-      <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyA5Mko01TH5URzgkFUX4EaLXFMqjCbmqYY&center=55.75891952693745,37.59045935989981&zoom=14&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x121925&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0xd6d7d9&style=element:labels.text.stroke%7Ccolor:0x212121%7Cvisibility:off&style=feature:administrative%7Celement:geometry%7Ccolor:0xffffff&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0xffffff&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi.business%7Cvisibility:off&style=feature:poi.park%7Celement:geometry%7Ccolor:0x121925&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b%7Cvisibility:off&style=feature:road%7Celement:geometry.fill%7Ccolor:0x4e535b&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road%7Celement:labels.text.fill%7Ccolor:0xd6d7d9&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.highway%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e535b&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0xd9d7d9&style=feature:transit%7Cvisibility:off&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x121925&style=feature:water%7Celement:labels.text.fill%7Ccolor:0xffffff&size=480x360"></script>
+    <section class="contacts">
+
+      <div class="contacts__info">
+        <h2 class="contacts__heading heading">Contacts</h2>
+        <h4 class="contacts__subheading heading">Adress</h4>
+        <div class="contacts__text">
+          123557 Moscow,<br>
+          Presnensky district, Bolshaya<br>
+          Gruzinskaya str., 17 st1
+        </div>
+
+        <h4 class="contacts__subheading heading">Telephone</h4>
+        <div class="contacts__text">
+          +7 (495) 139 66 51<br>
+          +7 (495) 143 80 55
+        </div>
+
+        <h4 class="contacts__subheading heading">E-mail</h4>
+
+        <div class="contacts__text">info_stance@gmail.com</div>
+
+
+      </div>
+
+      <div class="contacts__map"></div>
+
+
     </section>
+
+    <footer class="container__section footer">
+      <div class="footer__copyright footer__item">
+        © © STANCE, 2009 - 2020
+        <hr>
+        All rights reserved
+        Privacy policy
+      </div>
+
+      <menu class="footer__menu footer__item">
+        <h5 class="footer__heading">Menu</h5>
+        <ul>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link footer__link" href="#">Home</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link footer__link" href="#">About</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link footer__link" href="#">Works</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link footer__link" href="#">Join</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link footer__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </menu>
+
+      <div class="footer__social footer__item">
+        <h5 class="footer__heading">Social network</h5>
+        <ul>
+          <li class="footer__social-link">
+            <a href="#" class="footer__social-link footer__link">Facebook</a>
+          </li>
+          <li class="footer__social-link">
+            <a href="#" class="footer__social-link footer__link">Instagram</a>
+          </li>
+          <li class="footer__social-link">
+            <a href="#" class="footer__social-link footer__link">YouTube</a>
+          </li>
+          <li class="footer__social-link">
+            <a href="#" class="footer__social-link footer__link">Twitter</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="#" class="footer__author footer__item">
+        <img class="footer__logo" src="./svg/footer.svg" alt="logo">
+        <span class="footer__author-name">
+          Website<br>by AlbaWeb
+        </span>
+      </a>
+    </footer>
   </div>
 
   <script src="./js/first.js"></script>
@@ -306,6 +386,13 @@
 
   <script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
   <script src="./js/works.js"></script>
+  <!-- тут надо сделать async -->
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5Mko01TH5URzgkFUX4EaLXFMqjCbmqYY"></script>
+
+  <script src="./js/contacts.js"></script>
+
+
 
 </body>
 </html>

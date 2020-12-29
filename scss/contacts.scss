@@ -1,0 +1,85 @@
+@import "_vars.scss";
+
+.contacts {
+  color: white;
+  position: relative;
+  // background: linear-gradient(90deg, $color_black 0%, $color_black 75%, transparent 100%);
+  background: $color_black;
+
+	&__info {
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: linear-gradient(90deg, $color_black 0%, $color_black 70%, transparent 100%);
+    margin-left: 10%;
+    padding-bottom: 150px;
+
+    @media screen and (max-width: 1030px) {
+      margin-left: 5%;
+      padding-bottom: 80px
+    }
+
+    @media screen and (max-width: 770px) {
+      width: 95%;
+      position: relative;
+      background: $color_black;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (max-width: 420px) {
+      margin-left: 3%;
+    }
+	}
+
+	&__heading {
+    color: white;
+    font-size: 74px;
+    padding-top: 3.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+
+    @media screen and (max-width: 770px) {
+      padding-top: 1.5em;
+      margin-bottom: 0.3em;
+    }
+
+    @media screen and (max-width: 420px) {
+      padding-top: 1em;
+      padding-bottom: 0;
+    }
+	}
+
+	&__subheading {
+    color: white;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 0.6em;
+	}
+
+	&__text {
+
+	}
+
+	&__map {
+    height: 926px;
+    width: 70%;
+    top: 0;
+    margin-left: auto;
+    z-index: 2;
+
+    @media screen and (max-width: 770px) {
+      height: 725px;
+      top: unset;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media screen and (max-width: 770px) {
+      height: 450px;
+    }
+	}
+
+}

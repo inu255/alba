@@ -1,0 +1,63 @@
+@import "_vars.scss";
+
+.footer {
+  background: $color_black;
+  color: white;
+  display: flex;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  &__item {
+    @media screen and (max-width: 420px) {
+      width: 50%;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+  }
+
+	&__copyright {
+
+	}
+
+	&__menu {
+
+	}
+
+	&__heading {
+
+	}
+
+	&__menu-item {
+
+	}
+
+	&__menu-link {
+
+	}
+
+	&__social {
+    margin-left: auto;
+
+	}
+
+	&__social-link {
+
+	}
+
+	&__author {
+    margin-left: auto;
+    display: flex;
+	}
+
+	&__logo {
+
+	}
+
+	&__author-name {
+
+	}
+
+}
