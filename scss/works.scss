@@ -2,8 +2,7 @@
 
 
 .works {
-  padding-right: 0;
-  padding-left: 0;
+
   &__heading {
     font-size: 64px;
     padding-left: 10%;
@@ -62,21 +61,17 @@
 
   &__slider::-webkit-scrollbar-track {
     background: $color_midgrey;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-
+    border-top: 5px solid $color_white;
+    border-bottom: 5px solid $color_white;
   }
 
   &__slider::-webkit-scrollbar-thumb {
     background: $color_red;
-    border-top: 0px solid white;
-    border-bottom: 0px solid white;
     border-radius: 5.5px;
-
   }
 
   ::-webkit-scrollbar-button {
-    background: white;
+    background: $color_white;
     width: 5%;
 
     @media screen and (max-width: 1030px) {
