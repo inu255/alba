@@ -3,6 +3,7 @@
 .facts {
   padding-left: 0;
   padding-right: 0;
+
 	&__top, &__bottom {
     display: flex;
     flex-wrap: wrap;
@@ -22,32 +23,95 @@
 
   &__img-left, &__img-right {
     width: 50%;
+
+    @media screen and (max-width: 1300px) {
+      width: 55%;
+    }
+
     @media screen and (max-width: 1030px) {
       width: 100%;
     }
   }
 
-	&__img-left {
-
-	}
-
 	&__text {
-    width: 42%;
+    width: 27%;
+
+    @media screen and (max-width: 1700px) {
+      width: 32%;
+    }
+
+    @media screen and (max-width: 1400px) {
+      width: 38%;
+    }
+
+    @media screen and (max-width: 1300px) {
+      width: 40%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 42%;
+    }
+
     @media screen and (max-width: 1030px) {
       width: 92%;
     }
 
-    &:first-child {
-      padding-right: 8%;
+	}
+
+  &__text:first-child {
+    padding-right: 23%;
+    padding-top: 12%;
+
+    @media screen and (max-width: 1700px) {
+      padding-right: 18%;
+      padding-top: 10%;
     }
 
-    &:last-child {
+    @media screen and (max-width: 1400px) {
+      padding-right: 12%;
+    }
+
+    @media screen and (max-width: 1300px) {
+      padding-right: 5%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      padding-right: 3%;
+    }
+
+    @media screen and (max-width: 1030px) {
+      padding-right: 8%;
+    }
+  }
+
+  &__text:last-child {
+    padding-left: 8%;
+
+    @media screen and (max-width: 1300px) {
+      padding-left: 5%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      padding-left: 3%;
+    }
+
+    @media screen and (max-width: 1030px) {
       padding-left: 8%;
     }
-	}
+  }
 
 	&__heading {
     font-size: 64px;
+    white-space: nowrap;
+    margin-bottom: 0.5em;
+    @media screen and (min-width: 1500px) {
+      margin-top: 1.6em;
+    }
+
+    @media screen and (min-width: 1030px) and (max-width: 1300px) {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
     @media screen and (max-width: 420px) {
       font-size: 32px;
     }
@@ -83,11 +147,17 @@
 	}
 
 	&__unordered-list {
+    list-style: none;
+    padding-left: 1em;
 
-	}
-
-	&__img-right {
-
+    & li:before {
+      content: '—';
+      color: $color_red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
 	}
 
 }
