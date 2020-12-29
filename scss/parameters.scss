@@ -1,0 +1,120 @@
+@import "_vars.scss";
+
+
+.parameters {
+
+	&__heading {
+    font-size: 64px;
+    @media screen and (max-width: 420px) {
+      font-size: 32px;
+    }
+	}
+
+	&__table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: auto;
+    margin-bottom: 100px;
+
+		@media screen and (max-width: 1030px) {
+			margin-bottom: 70px;
+    }
+
+    @media screen and (max-width: 769px) {
+      border: 0;
+    }
+
+		@media screen and (max-width: 730px) {
+			margin-bottom: 50px;
+    }
+	}
+
+	&__thead {
+
+    @media screen and (max-width: 769px) {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+	}
+
+	&__trow {
+    background: $color_white;
+    border-bottom: 1px solid $color_lightgrey;
+    padding: 2em 3em;
+
+    @media screen and (max-width: 769px) {
+      display: block;
+      border-bottom: none;
+      margin-bottom: 0.6em;
+      padding: 2em 0;
+    }
+	}
+
+  &__thead-item, &__tbody-item {
+    padding: 0.6em;
+    text-align: center;
+	}
+
+	&__thead-item {
+    text-transform: uppercase;
+    color: $color_white;
+    background: $color_darkgrey;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+	}
+
+	&__tbody-item {
+
+    position: relative;
+    @media screen and (max-width: 769px) {
+      border-bottom: 1px solid $color_lightgrey;
+      display: block;
+      text-align: right;
+    }
+	}
+
+  &__tbody-item--big {
+
+    @media screen and (max-width: 769px) {
+      color: $color_white;
+      background: $color_darkgrey;
+    }
+
+    @media screen and (min-width: 769px) {
+      width: 18%;
+      text-align: left;
+      padding-left: 4%;
+      padding-right: 0;
+    }
+  }
+
+  &__tbody-item:before {
+
+    @media screen and (max-width: 769px) {
+      content: attr(data-label);
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__tbody-item:last-child {
+
+    @media screen and (max-width: 769px) {
+      border-bottom: 0;
+    }
+  }
+
+}
