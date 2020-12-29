@@ -82,13 +82,11 @@
     }
   }
 
-
-  &__img {
-
-  }
-
 	&__title {
     font-size: 30px;
+    @media screen and (max-width: 420px) {
+      font-size: 25px;
+    }
 	}
 
 }

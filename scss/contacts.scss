@@ -3,7 +3,6 @@
 .contacts {
   color: white;
   position: relative;
-  // background: linear-gradient(90deg, $color_black 0%, $color_black 75%, transparent 100%);
   background: $color_black;
 
 	&__info {
@@ -48,6 +47,7 @@
     @media screen and (max-width: 420px) {
       padding-top: 1em;
       padding-bottom: 0;
+      font-size: 38px;
     }
 	}
 
@@ -58,16 +58,17 @@
     margin-bottom: 0.6em;
 	}
 
-	&__text {
-
-	}
-
 	&__map {
-    height: 926px;
+    height: 910px;
     width: 70%;
     top: 0;
     margin-left: auto;
     z-index: 2;
+
+    @media screen and (max-width: 1030px) {
+      height: 840px;
+
+    }
 
     @media screen and (max-width: 770px) {
       height: 725px;
@@ -77,7 +78,7 @@
       margin-right: 0;
     }
 
-    @media screen and (max-width: 770px) {
+    @media screen and (max-width: 420px) {
       height: 450px;
     }
 	}
