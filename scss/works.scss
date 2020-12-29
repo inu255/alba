@@ -31,7 +31,7 @@
     }
 
     &:hover {
-      cursor: pointer;
+      cursor: grab;
     }
 
     &:active {
@@ -54,6 +54,11 @@
     }
   }
 
+  &__slider {
+    scrollbar-color: $color_red $color_lightgrey;
+    scrollbar-width: thin;
+  }
+
   &__slider::-webkit-scrollbar {
     height: 11px;
   }
@@ -70,7 +75,7 @@
     border-radius: 5.5px;
   }
 
-  ::-webkit-scrollbar-button {
+  &__slider::-webkit-scrollbar-button {
     background: $color_white;
     width: 5%;
 
