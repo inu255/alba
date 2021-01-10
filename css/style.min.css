@@ -1,4 +1,4 @@
-.container{font-family:'Inter', 'Arial', sans-serif;font-weight:300;font-style:normal;font-size:18px;line-height:150%;color:#4E535B}.container__section{padding-left:10%;padding-right:10%}@media screen and (max-width: 1030px){.container__section{padding-left:5%;padding-right:5%}}@media screen and (max-width: 420px){.container__section{padding-left:3%;padding-right:3%}}
+.container{font-family:'Inter', 'Arial', sans-serif;font-weight:300;font-style:normal;font-size:18px;line-height:150%;color:#4E535B;background:#fff}.container__section{padding-left:10%;padding-right:10%}@media screen and (max-width: 1030px){.container__section{padding-left:5%;padding-right:5%}}@media screen and (max-width: 420px){.container__section{padding-left:3%;padding-right:3%}}
 
 .heading{font-family:'Prata', 'Times New Roman', serif;font-weight:normal;font-style:normal;line-height:115%;color:#121925}
 
